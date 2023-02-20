@@ -1,6 +1,6 @@
 function Container(props: any) {
   return (
-    <div className="bg-primary">
+    <div className="bg-primary w-full">
         {props.children}
     </div>
   )

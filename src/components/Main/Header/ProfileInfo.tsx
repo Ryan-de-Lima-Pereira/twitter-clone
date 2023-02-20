@@ -1,6 +1,6 @@
 function ProfileInfo(props: any) {
   return (
-    <div>{props.children}</div>
+    <div className="ml-4 flex flex-col">{props.children}</div>
   )
 }
 

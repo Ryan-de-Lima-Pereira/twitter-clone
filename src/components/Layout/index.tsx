@@ -1,6 +1,6 @@
 import Container from './Container'
 import Warpper from './Warpper'
-import Main from '../Main/index'
+import Main from '../Main/Main'
 //import MenuBar from './MenuBar'
 //import MenuBar from './SideBar'
 
