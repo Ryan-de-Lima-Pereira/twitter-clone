@@ -4,4 +4,12 @@
   text-align: center;
 }
 
+.scroll-bar{
+  scrollbar-width: none;  
+};
+
+.scroll-bar::-webkit-scrollbar {
+  width: 0px;
+}
+
 

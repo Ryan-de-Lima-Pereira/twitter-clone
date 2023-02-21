@@ -2,6 +2,7 @@ import ProfileInfo from "./Header/ProfileInfo"
 import Header from "./Header/Header"
 import {BackIcon, HomeIcon, BellIcon, EmailIcon, SearchIcon} from "./Header/Icons"
 import BottomMenu from './Header/BottomMenu'
+import ProfilePage from './ProfilePage/ProfilePage'
 
 function index() {
   return (
@@ -19,8 +20,6 @@ function index() {
           <span className="text-[15px] text-gray">10 tweets</span>
         </ProfileInfo>
 
-        {/*<ProfilePage></ProfilePage>*/}
-
         <BottomMenu>
             <HomeIcon/>
             <SearchIcon/>
@@ -29,6 +28,8 @@ function index() {
         </BottomMenu>
 
       </Header>
+      
+      <ProfilePage></ProfilePage>
     </div>
   )
 }
