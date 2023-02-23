@@ -4,7 +4,8 @@ import Banner from './Banner'
 import ProfileData from './ProfileData'
 import Avatar from './Avatar'
 import Followage from './Followage'
-
+import EditButton from './EditButton'
+import Feed from '../../Feed/Feed'
 
 function ProfilePage() {
   return (
@@ -14,9 +15,9 @@ function ProfilePage() {
       </Banner>
 
       <ProfileData>
-        {/*<EditButton>
+        <EditButton>
           Edite seu perfil
-        </EditButton>*/}
+        </EditButton>
 
         <h1 className='font-bold text-xl'>Joseph Daguerre</h1>
         <h2 className='font-normal text-base text-gray'>@DaguerreJoseph</h2>
@@ -25,30 +26,36 @@ function ProfilePage() {
           Um fotógrafo brincalhão que quer mudar o mundo
         </p>
 
-        <ul className='py-3'>
+        <ul className='flex flex-col py-3'>
 
-          <li className='text-base text-gray'>
-            <LocationIcon/>
-            Atualmente morando no inferno
+          <li className='flex flex-col text-base text-gray sm:flex-row'>
+            <div className='flex flex-row items-center'>
+              <LocationIcon/>
+              <span>Atualmente morando no inferno</span>
+            </div>
+            <div className='flex flex-row items-center sm:ml-8'>
+              <CakeIcon/>
+              <span>Nascido(a) em 2061</span>
+            </div>
           </li>
-          <li className='text-base text-gray'>
-            <CakeIcon/>
-            Nascido(a) em 2061 
-          </li>
-          <li className='text-base text-gray'>
+
+          <li className='flex flex-row itens-center text-base text-gray'>
             <CalendarIcon/>
-            Ingressou em abril de 2084
+            <span>Ingressou em abril de 2084</span>
           </li>
 
         </ul>
 
         <Followage>
-          <span>Seguindo <strong> 189</strong> </span>
+          <span className='text-gray'><strong className='text-white'>189 </strong>Seguindo</span>
 
-          <span> <strong>30 </strong> seguidores</span>
+          <span className='ml-4 text-gray'> <strong className='text-white'>30 </strong> Seguidores</span>
         </Followage>
 
       </ProfileData>
+
+      <Feed/>
+
     </Container>
   )
 }

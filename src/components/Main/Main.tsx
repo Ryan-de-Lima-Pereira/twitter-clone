@@ -28,8 +28,8 @@ function index() {
         </BottomMenu>
 
       </Header>
-      
-      <ProfilePage></ProfilePage>
+
+      <ProfilePage/>      
     </div>
   )
 }

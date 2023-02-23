@@ -1,7 +1,9 @@
 
 function Followage(props: any) {
   return (
-    <div>{props.children}</div>
+    <div className="flex flex-row itens-center">
+      {props.children}
+    </div>
   )
 }
 
