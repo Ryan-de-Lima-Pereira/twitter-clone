@@ -1,7 +1,7 @@
 
 function Description(props: any) {
   return (
-    <p className="text-base mt-1">{props.children}</p>
+    <p className="text-base mt-1 text-left">{props.children}</p>
   )
 }
 

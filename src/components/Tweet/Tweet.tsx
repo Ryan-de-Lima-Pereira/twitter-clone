@@ -8,7 +8,7 @@ import ImageContent from './ImageContent'
 import Status from './Status'
 import Date from './Date'
 import Dot from './Dot'
-import {Icons, LikeIcon, CommentIcon, RetweetIcon, RetweetIconMini} from './Icons'
+import {Icons, LikeIcon, CommentIcon, RetweetIcon, RetweetIconMini, ArrowUpTray, DonateIcon, ElipsesMenu, Estatistica} from './Icons'
 
 function Tweet() {
 
@@ -37,17 +37,29 @@ function Tweet() {
                 <ImageContent/>
 
                 <Icons>
-                    <Status>
+                    <Status icon={'padrao'}>
                         <CommentIcon/>
-                        2
+                        <span>10</span>
                     </Status>
-                    <Status>
+                    <Status icon={'padrao'}>
                         <RetweetIcon/>
-                        2
+                        <span>100</span>
                     </Status>
-                    <Status>
+                    <Status icon={'like'}>
                         <LikeIcon/>
-                        2
+                        <span>2084</span>
+                    </Status>
+                    <Status icon={'padrao'}>
+                        <Estatistica/>
+                        <span>999,9 mil</span>
+                    </Status>
+
+                    <Status icon={'padrao'}>
+                        <ArrowUpTray/>
+                    </Status>
+                    <Status icon={'donate'}>
+                        <DonateIcon/>
+                        <span>Doar</span>
                     </Status>
                 </Icons> 
             </Content>
