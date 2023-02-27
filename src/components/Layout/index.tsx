@@ -2,13 +2,13 @@ import Container from './Container'
 import Warpper from './Warpper'
 import Main from '../Main/Main'
 //import MenuBar from './MenuBar'
-//import MenuBar from './SideBar'
+import MenuBar from '../MenuBar/MenuBar'
 
 export default function Layout() {
   return (
     <Container>
         <Warpper>
-            {/*<MenuBar/>*/}
+            <MenuBar/>
             <Main/>
             {/*<SideBar/>*/}
         </Warpper>
