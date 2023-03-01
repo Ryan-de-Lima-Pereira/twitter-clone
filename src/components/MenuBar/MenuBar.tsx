@@ -56,7 +56,7 @@ const MenuBar = () => {
 
         <ProfileData>
           <strong>Joseph Daguerre</strong>
-          <p className="text-gray">@JosephDaguerre</p>
+          <p className="text-gray">@DaguerreJoseph</p>
 
         </ProfileData>
         <ExitIcon/>
