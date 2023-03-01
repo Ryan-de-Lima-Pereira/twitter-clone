@@ -3,6 +3,7 @@ import Warpper from './Warpper'
 import Main from '../Main/Main'
 //import MenuBar from './MenuBar'
 import MenuBar from '../MenuBar/MenuBar'
+import SideBar from '../SideBar/SideBar'
 
 export default function Layout() {
   return (
@@ -10,7 +11,7 @@ export default function Layout() {
         <Warpper>
             <MenuBar/>
             <Main/>
-            {/*<SideBar/>*/}
+            <SideBar/>
         </Warpper>
     </Container>
   )

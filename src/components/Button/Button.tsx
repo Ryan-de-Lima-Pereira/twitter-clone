@@ -1,4 +1,10 @@
-function Button(props: any) {
+interface Props {
+    outline: boolean,
+    mod: string,
+    children?: React.ReactNode
+}
+
+function Button(props: Props) {
     const outline: boolean = props.outline
 
     const style = {
