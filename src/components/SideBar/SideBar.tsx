@@ -5,6 +5,7 @@ import Body from './Body'
 import List from '../List/List'
 import FollowSugestion from '../FollowSugestion/FollowSugestion'
 import New from '../News/News'
+import StickyBox from 'react-sticky-box'
 
 const SideBar = () => {
 
@@ -14,7 +15,7 @@ const SideBar = () => {
                 <SearchInput/>
                 <SearchIcon/>
             </SearchWrapper>
-
+            <StickyBox>
             <Body>
                 <List title="Talves você curta"
                 elements={[
@@ -31,6 +32,7 @@ const SideBar = () => {
                     <New title='Terremoto no Japão' topic='Noticia'/>
                 ]}/>
             </Body>
+            </StickyBox>
         </div>
     )
 }

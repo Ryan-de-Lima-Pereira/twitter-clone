@@ -19,6 +19,9 @@ const List = (props: Props) => {
                 return <Item key={index}> {element} </Item>
             })}
 
+            <Item>
+                <a className="text-twitter">Mostrar mais</a>
+            </Item>
         </div>
     )
 }

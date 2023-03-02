@@ -45,7 +45,7 @@ const MenuBar = () => {
           <span>Mais</span>
         </MenuButton>
 
-        <Button>
+        <Button outline={false} mod={''}>
           <span>Twettar</span>
         </Button>
         
